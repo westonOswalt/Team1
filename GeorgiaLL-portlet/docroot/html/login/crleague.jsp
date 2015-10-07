@@ -23,12 +23,15 @@
             <br/>
             <br/>
             Number of Divisions
-            <select id="divNumber" onchange="javascript:add();">
+            <select id="divNumber" onchange="add()">
             <div id="divisionDropdown" class="dropdown" name="divisionNumber">
 			  <button id="myTrigger" class="btn btn-default dropdown-toggle" type="button">
 			    <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu" name="divisionMenu">
+			  	<option>
+			  	<li></li>
+			  	</option>
 			  	<option>
 			    <li><a value="1" href="#">1</a></li>
 			    </option>
@@ -56,19 +59,16 @@
 			);
 			</script>
 			
-			<script type="text/javascript"> 
+			<p>Division <input type="text" id="d" size="20"></p>
+			
+			<script type="text/javascript"> 			
 			function add()
 			{
-			var contentID = document.getElementById('content'); 
-			var s1 = document.getElementById("divNumber").value;
-			var contentID = document.getElementById('content'); 
-			var i;
-				for(i = 0; i < s1; i++)
+				var x = textboxCount.options[textboxCount.selectedIndex].value;
+				var i = 0;
+				for(i ; i< x; i++)
 					{
-					var newTBDiv = document.createElement('div'); 
-					newTBDiv.setAttribute('id','strText'+ i); 
-					newTBDiv.innerHTML = "Student"+i+": <input type= 'text' id='"+i + "' name='Parameter"+ i + "'/>"; 
-					contentID.appendChild(newTBDiv); 
+						document.getElementById("d").value = textboxCount.options[textboxCount.selectedIndex].text;
 					}
 			}
 			</script>
@@ -104,4 +104,3 @@
      <aui:button type="submit" onClick="<%= loginURL.toString() %>" value="Logout"></aui:button>
 
 </form>
-<div id="content"></div> 
