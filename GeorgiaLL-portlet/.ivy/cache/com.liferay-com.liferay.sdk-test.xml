@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.liferay"
+		module="com.liferay.sdk"
+		revision="working@ITIC-050-9020M"
+		conf="test"
+		confs="default, internal, provided, runtime, test"
+		date="20151006141204"/>
+	<dependencies>
+		<module organisation="org.springframework" name="spring-test">
+			<revision name="3.0.7.RELEASE" status="release" pubdate="20111223174026" resolver="liferay-public" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="11">
+				<metadata-artifact status="successful" details="" size="5165" time="656" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.springframework\spring-test\ivy-3.0.7.RELEASE.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.springframework\spring-test\ivy-3.0.7.RELEASE.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/springframework/spring-test/3.0.7.RELEASE/spring-test-3.0.7.RELEASE.pom"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="3.0.7.RELEASE" rev-constraint-default="3.0.7.RELEASE" rev-constraint-dynamic="3.0.7.RELEASE" callerrev="working@ITIC-050-9020M"/>
+				<artifacts>
+					<artifact name="spring-test" type="jar" ext="jar" status="successful" details="" size="205357" time="1027" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.springframework\spring-test\jars\spring-test-3.0.7.RELEASE.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/springframework/spring-test/3.0.7.RELEASE/spring-test-3.0.7.RELEASE.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-module-junit4">
+			<revision name="1.6.1" status="release" pubdate="20150103012532" resolver="liferay-public" artresolver="default" homepage="http://www.powermock.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="9">
+				<metadata-artifact status="successful" details="" size="1952" time="703" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-module-junit4\ivy-1.6.1.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-module-junit4\ivy-1.6.1.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-module-junit4/1.6.1/powermock-module-junit4-1.6.1.pom"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="working@ITIC-050-9020M"/>
+				<artifacts>
+					<artifact name="powermock-module-junit4" type="jar" ext="jar" status="successful" details="" size="45659" time="1000" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-module-junit4\jars\powermock-module-junit4-1.6.1.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-module-junit4/1.6.1/powermock-module-junit4-1.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-module-junit4-common">
+			<revision name="1.6.1" status="release" pubdate="20150103012523" resolver="liferay-public" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="10">
+				<metadata-artifact status="successful" details="" size="1132" time="610" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-module-junit4-common\ivy-1.6.1.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-module-junit4-common\ivy-1.6.1.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-module-junit4-common/1.6.1/powermock-module-junit4-common-1.6.1.pom"/>
+				<caller organisation="org.powermock" name="powermock-module-junit4" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.6.1"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="working@ITIC-050-9020M"/>
+				<artifacts>
+					<artifact name="powermock-module-junit4-common" type="jar" ext="jar" status="successful" details="" size="14525" time="835" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-module-junit4-common\jars\powermock-module-junit4-common-1.6.1.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-module-junit4-common/1.6.1/powermock-module-junit4-common-1.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-api-mockito">
+			<revision name="1.6.1" status="release" pubdate="20150103012512" resolver="liferay-public" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="2">
+				<metadata-artifact status="successful" details="" size="1224" time="719" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-api-mockito\ivy-1.6.1.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-api-mockito\ivy-1.6.1.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-api-mockito/1.6.1/powermock-api-mockito-1.6.1.pom"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="working@ITIC-050-9020M"/>
+				<artifacts>
+					<artifact name="powermock-api-mockito" type="jar" ext="jar" status="successful" details="" size="73032" time="907" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-api-mockito\jars\powermock-api-mockito-1.6.1.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-api-mockito/1.6.1/powermock-api-mockito-1.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-api-support">
+			<revision name="1.6.1" status="release" pubdate="20150103012453" resolver="liferay-public" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<metadata-artifact status="successful" details="" size="1265" time="631" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-api-support\ivy-1.6.1.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-api-support\ivy-1.6.1.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-api-support/1.6.1/powermock-api-support-1.6.1.pom"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="working@ITIC-050-9020M"/>
+				<caller organisation="org.powermock" name="powermock-api-mockito" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.6.1"/>
+				<artifacts>
+					<artifact name="powermock-api-support" type="jar" ext="jar" status="successful" details="" size="19144" time="921" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-api-support\jars\powermock-api-support-1.6.1.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-api-support/1.6.1/powermock-api-support-1.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-core">
+			<revision name="1.6.1" status="release" pubdate="20150103012442" resolver="liferay-public" artresolver="default" homepage="http://www.powermock.org" downloaded="true" searched="true" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="5">
+				<metadata-artifact status="successful" details="" size="2126" time="671" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-core\ivy-1.6.1.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-core\ivy-1.6.1.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-core/1.6.1/powermock-core-1.6.1.pom"/>
+				<caller organisation="org.powermock" name="powermock-api-support" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.6.1"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="working@ITIC-050-9020M"/>
+				<caller organisation="org.powermock" name="powermock-module-junit4-common" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.6.1"/>
+				<artifacts>
+					<artifact name="powermock-core" type="jar" ext="jar" status="successful" details="" size="100741" time="875" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-core\jars\powermock-core-1.6.1.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-core/1.6.1/powermock-core-1.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.18.2-GA" status="release" pubdate="20140527115509" resolver="liferay-public" artresolver="default" homepage="http://www.javassist.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="8">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="9522" time="703" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.javassist\javassist\ivy-3.18.2-GA.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.javassist\javassist\ivy-3.18.2-GA.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.pom"/>
+				<caller organisation="org.powermock" name="powermock-core" conf="default, compile, runtime, master" rev="3.18.2-GA" rev-constraint-default="3.18.2-GA" rev-constraint-dynamic="3.18.2-GA" callerrev="1.6.1"/>
+				<artifacts>
+					<artifact name="javassist" type="bundle" ext="jar" status="successful" details="" size="714524" time="1351" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-reflect">
+			<revision name="1.6.1" status="release" pubdate="20150103012430" resolver="liferay-public" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="6">
+				<metadata-artifact status="successful" details="" size="1042" time="610" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-reflect\ivy-1.6.1.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-reflect\ivy-1.6.1.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-reflect/1.6.1/powermock-reflect-1.6.1.pom"/>
+				<caller organisation="org.powermock" name="powermock-api-support" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.6.1"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="working@ITIC-050-9020M"/>
+				<caller organisation="org.powermock" name="powermock-core" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.6.1"/>
+				<caller organisation="org.powermock" name="powermock-module-junit4-common" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.6.1"/>
+				<artifacts>
+					<artifact name="powermock-reflect" type="jar" ext="jar" status="successful" details="" size="46798" time="1000" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.powermock\powermock-reflect\jars\powermock-reflect-1.6.1.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/powermock/powermock-reflect/1.6.1/powermock-reflect-1.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.objenesis" name="objenesis">
+			<revision name="2.1" status="release" pubdate="20131010162537" resolver="liferay-public" artresolver="default" homepage="http://objenesis.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="7">
+				<metadata-artifact status="successful" details="" size="2536" time="594" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.objenesis\objenesis\ivy-2.1.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.objenesis\objenesis\ivy-2.1.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/objenesis/objenesis/2.1/objenesis-2.1.pom"/>
+				<caller organisation="org.powermock" name="powermock-reflect" conf="default, compile, runtime, master" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="1.6.1"/>
+				<artifacts>
+					<artifact name="objenesis" type="jar" ext="jar" status="successful" details="" size="41755" time="1000" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.objenesis\objenesis\jars\objenesis-2.1.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/objenesis/objenesis/2.1/objenesis-2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mockito" name="mockito-all">
+			<revision name="1.10.8" status="release" pubdate="20141010151343" resolver="liferay-public" artresolver="default" homepage="http://www.mockito.org" downloaded="true" searched="true" default="false" conf="master(*), default, compile, runtime(*), runtime, compile(*), master" position="3">
+				<license name="The MIT License" url="http://github.com/mockito/mockito/blob/master/LICENSE"/>
+				<metadata-artifact status="successful" details="" size="929" time="750" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.mockito\mockito-all\ivy-1.10.8.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.mockito\mockito-all\ivy-1.10.8.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/mockito/mockito-all/1.10.8/mockito-all-1.10.8.pom"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="working@ITIC-050-9020M"/>
+				<caller organisation="org.powermock" name="powermock-api-mockito" conf="default, compile, runtime, master" rev="1.10.8" rev-constraint-default="1.10.8" rev-constraint-dynamic="1.10.8" callerrev="1.6.1"/>
+				<artifacts>
+					<artifact name="mockito-all" type="jar" ext="jar" status="successful" details="" size="1211231" time="1670" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.mockito\mockito-all\jars\mockito-all-1.10.8.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/mockito/mockito-all/1.10.8/mockito-all-1.10.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.9.5" status="release" pubdate="20121014051023" resolver="liferay-public" artresolver="default" evicted="latest-revision" evicted-reason="" homepage="http://www.mockito.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="-1">
+				<license name="The MIT License" url="http://code.google.com/p/mockito/wiki/License"/>
+				<metadata-artifact status="successful" details="" size="1040" time="641" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.mockito\mockito-all\ivy-1.9.5.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.mockito\mockito-all\ivy-1.9.5.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.pom"/>
+				<evicted-by rev="1.10.8"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="working@ITIC-050-9020M"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.12" status="release" pubdate="20141204101743" resolver="liferay-public" artresolver="default" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="0">
+				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="23678" time="813" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\junit\junit\ivy-4.12.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\junit\junit\ivy-4.12.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/junit/junit/4.12/junit-4.12.pom"/>
+				<caller organisation="org.powermock" name="powermock-module-junit4" conf="default, compile, runtime, master" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="1.6.1"/>
+				<caller organisation="com.liferay" name="com.liferay.sdk" conf="test" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="working@ITIC-050-9020M"/>
+				<caller organisation="org.powermock" name="powermock-module-junit4-common" conf="default, compile, runtime, master" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="1.6.1"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="314932" time="1023" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\junit\junit\jars\junit-4.12.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/junit/junit/4.12/junit-4.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="4.12"/>
+				<caller organisation="org.powermock" name="powermock-module-junit4-common" conf="default, compile, runtime, master" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="1.6.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.3" status="release" pubdate="20120709160802" resolver="liferay-public" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<metadata-artifact status="successful" details="" size="766" time="703" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.hamcrest\hamcrest-core\ivy-1.3.xml" searched="true" original-local-location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.hamcrest\hamcrest-core\ivy-1.3.xml.original" origin-is-local="false" origin-location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
+				<caller organisation="junit" name="junit" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="4.12"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="successful" details="" size="45024" time="1093" location="C:\Users\woswalt13\git\Team1\GeorgiaLL-portlet\.ivy\cache\org.hamcrest\hamcrest-core\jars\hamcrest-core-1.3.jar">
+						<origin-location is-local="false" location="http://cdn.repository.liferay.com/nexus/content/groups/public/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
