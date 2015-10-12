@@ -23,55 +23,40 @@
             <br/>
             <br/>
             Number of Divisions
-            <select id="divNumber" onchange="add()">
-            <div id="divisionDropdown" class="dropdown" name="divisionNumber">
-			  <button id="myTrigger" class="btn btn-default dropdown-toggle" type="button">
-			    <span class="caret"></span>
-			  </button>
-			  <ul class="dropdown-menu" name="divisionMenu">
-			  	<option>
-			  	<li></li>
-			  	</option>
-			  	<option>
-			    <li><a value="1" href="#">1</a></li>
-			    </option>
-			    <option>
-			    <li><a value="2" href="#">2</a></li>
-			    </option>
-			    <option>
-			    <li><a value="3" href="#">3</a></li>
-			    </option>
-			  </ul>
-			</div>
+            <select id="divNumber" name="divisionMenu" onchange="addBoxes(this.value);">
+			  	<option value=0>(Select Option)</option>
+			    <option value=1>1</option>
+			    <option value=2>2</option>
+			    <option value=3>3</option>
 			</select>
 			
-			<script>
-			YUI().use(
-			  'aui-dropdown',
-			  function(Y) {
-			    new Y.Dropdown(
-			      {
-			        boundingBox: '#divisionDropdown',
-			        trigger: '#myTrigger'
-			      }
-			    ).render();
-			  }
-			);
-			</script>
+			<script> 
 			
-			<p>Division <input type="text" id="d" size="20"></p>
-			
-			<script type="text/javascript"> 			
-			function add()
+			function addBoxes(obj)
 			{
-				var x = textboxCount.options[textboxCount.selectedIndex].value;
-				var i = 0;
-				for(i ; i< x; i++)
-					{
-						document.getElementById("d").value = textboxCount.options[textboxCount.selectedIndex].text;
-					}
+				var divisionCount = obj;
+				var i;
+				var container = document.getElementById("divisionsContainer");
+				
+				while (container.hasChildNodes())
+				{
+					container.removeChild(container.lastChild);
+				}
+				
+				for(i = 0; i < divisionCount; i++)
+				{
+					container.appendChild(document.createTextNode("Division " + (i + 1) + " "));
+					var input = document.createElement("input");
+					input.type = "text";
+					container.appendChild(input);
+					container.appendChild(document.createElement("br"));
+				}
 			}
 			</script>
+			
+			<div id="divisionsContainer">
+			<p id="divisions">&nbsp;&nbsp;&nbsp;</p>
+			</div>
 			
 			<br/>
 			<br/>
