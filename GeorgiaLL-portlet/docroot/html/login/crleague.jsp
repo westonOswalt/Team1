@@ -11,6 +11,8 @@
 
 <portlet:actionURL name="addEntry" var="addEntryURL"></portlet:actionURL>
 
+
+
 <form action="com.test.NewLeague" name="<portlet:namespace />fm">
         <aui:fieldset>
             League Name <input name="leagueName" type="text">
