@@ -25,9 +25,7 @@
 
 <portlet:defineObjects />
 
-<portlet:renderURL var="viewURL">
-    <portlet:param name="mvcPath" value="/html/guestbook/view.jsp"></portlet:param>
-</portlet:renderURL>
+
 
 <portlet:actionURL name="addEntry" var="addEntryURL"></portlet:actionURL>
 
@@ -35,13 +33,16 @@
 
 <form action="com.test.NewLeague" name="<portlet:namespace />fm">
         <aui:fieldset>
-            League Name <input name="leagueName" type="text">
+        	
+            <p>League Name</p> 
+            <input name="leagueName" type="text">
             <br/>
             <br/>
-            League Address <input name="leagueAddress type="text">
+            <p>League Address</p> 
+            <input name="leagueAddress type="text">
             <br/>
             <br/>
-            League Description <textarea rows="10" cols="10" name="leagueDesciption"></textarea>
+            <p>League Description</p> <textarea rows="10" cols="10" name="leagueDesciption"></textarea>
             <br/>
             <br/>
             Number of Divisions
