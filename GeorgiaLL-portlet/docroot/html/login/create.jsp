@@ -24,14 +24,18 @@
 
 	<aui:fieldset>
 
-            <aui:input name="">First Name</aui:input>
-          
-            <aui:input name=""> Last Name</aui:input>
-            <aui:input name=""> Email</aui:input>
-            <aui:input name=""> Password</aui:input>
-            <aui:input name="">Confirm Password</aui:input>
             
-
+            <p>First Name:</p> 
+            <input name="f_Name" type="text">
+            <p>Last Name:</p> 
+            <input name="l_Name" type="text">
+            <p>Email:</p> 
+            <input name="email" type="text">
+            <p>Password:</p> 
+            <input name="password" type="text">
+            <p>Confirm Password:</p> 
+            <input name="password" type="text">
+          
      </aui:fieldset>
          
     
@@ -40,17 +44,17 @@
      
       
 
-         <portlet:renderURL var="loginURL">
+         <portlet:renderURL var="createURL">
         	<portlet:param name="mvcPath" value="/html/login/admin.jsp"></portlet:param>
     	 </portlet:renderURL>
 
-    	 <aui:button  onClick="<%= loginURL.toString() %>" value="OK"></aui:button>
+    	 <aui:button  onClick="<%= createURL.toString() %>" value="OK"></aui:button>
     	 
-    	 <portlet:renderURL var="loginURL">
+    	 <portlet:renderURL var="createURL">
         	<portlet:param name="mvcPath" value="/html/login/view.jsp"></portlet:param>
     	 </portlet:renderURL>
 
-    	 <aui:button onClick="<%= loginURL.toString() %>" value="Cancle"></aui:button>
+    	 <aui:button onClick="<%= createURL.toString() %>" value="Cancle"></aui:button>
          
            
      </aui:button-row>
