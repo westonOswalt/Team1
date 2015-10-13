@@ -1,8 +1,25 @@
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 <%@ taglib uri="http://alloy.liferay.com/tld/aui" prefix="aui" %>
 
-<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
 <link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+
+
+</head>
+<body>
+
+
+
 <portlet:defineObjects />
 
 <portlet:renderURL var="viewURL">
@@ -91,3 +108,5 @@
      <aui:button type="submit" onClick="<%= loginURL.toString() %>" value="Logout"></aui:button>
 
 </form>
+</body>
+</html>

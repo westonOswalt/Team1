@@ -4,7 +4,15 @@
 <portlet:defineObjects />
 
 
- 
+ <!DOCTYPE html>
+<html>
+<head>
+
+
+
+</head>
+<body>
+
 <portlet:actionURL name="create" var="createURL"></portlet:actionURL>
 
 <aui:form action="<%= createURL %>" name="<portlet:namespace />fm">
@@ -25,13 +33,8 @@
     	 </portlet:renderURL>
 
     	 <aui:button onClick="<%= loginURL.toString() %>" value="Login"></aui:button>
-         
-           
-     </aui:button-row>
-     
-     <aui:button-row>
-
-         <portlet:renderURL var="loginURL">
+    	 
+    	 <portlet:renderURL var="loginURL">
         	<portlet:param name="mvcPath" value="/html/login/create.jsp"></portlet:param>
     	 </portlet:renderURL>
 
@@ -40,6 +43,10 @@
            
      </aui:button-row>
      
+     
+     
 
         
 </aui:form>
+</body>
+</html>

@@ -18,18 +18,8 @@
 
      </aui:fieldset>
          
-     <aui:button-row>
-
-         <portlet:renderURL var="loginURL">
-        	<portlet:param name="mvcPath" value="/html/login/view.jsp"></portlet:param>
-    	 </portlet:renderURL>
-
-    	 <aui:button onClick="<%= loginURL.toString() %>" value="Cancle"></aui:button>
-         
-           
-     </aui:button-row>
-     
-     
+    
+    
      <aui:button-row>
 
          <portlet:renderURL var="loginURL">
@@ -37,6 +27,12 @@
     	 </portlet:renderURL>
 
     	 <aui:button onClick="<%= loginURL.toString() %>" value="OK"></aui:button>
+    	 
+    	 <portlet:renderURL var="loginURL">
+        	<portlet:param name="mvcPath" value="/html/login/view.jsp"></portlet:param>
+    	 </portlet:renderURL>
+
+    	 <aui:button onClick="<%= loginURL.toString() %>" value="Cancle"></aui:button>
          
            
      </aui:button-row>
