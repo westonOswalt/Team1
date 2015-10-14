@@ -17,31 +17,35 @@
 
 </head>
 <body>
-
+<h1> Create a League </h1>
+<br> 
+<br> 
+<br> 
 
 
 <portlet:defineObjects />
 
-<portlet:renderURL var="viewURL">
-    <portlet:param name="mvcPath" value="/html/guestbook/view.jsp"></portlet:param>
-</portlet:renderURL>
 
-<portlet:actionURL name="addEntry" var="addEntryURL"></portlet:actionURL>
+
+<portlet:actionURL name="cleague" var="cleagueURL"></portlet:actionURL>
 
 
 
 <form action="com.test.NewLeague" name="<portlet:namespace />fm">
         <aui:fieldset>
-            League Name <input name="leagueName" type="text">
+        	
+            <p>League Name:</p> 
+            <input name="league_name" type="text">
             <br/>
             <br/>
-            League Address <input name="leagueAddress type="text">
+            <p>League Address:</p> 
+            <input name="league_address" type="text">
             <br/>
             <br/>
-            League Description <textarea rows="10" cols="10" name="leagueDesciption"></textarea>
+            <p>League Description:</p> <textarea rows="10" cols="10" name="leagueDesciption"></textarea>
             <br/>
             <br/>
-            Number of Divisions
+            Number of Divisions:
             <select id="divNumber" name="divisionMenu" onchange="addBoxes(this.value);">
 			  	<option value=0>(Select Option)</option>
 			    <option value=1>1</option>
@@ -80,7 +84,7 @@
 			<br/>
 			<br/>
 			<aui:fieldset last="true">
-			<p>League Type</p>
+			<p>League Type:</p>
 			<table border="5">
 			<tr>
 				<td>Baseball <input name="baseballChckBox" type="checkbox">
@@ -91,21 +95,21 @@
         </aui:fieldset>
 
       <aui:button-row>
-         <portlet:renderURL var="loginURL">
+         <portlet:renderURL var="cleagueURL">
         	<portlet:param name="mvcPath" value="/html/login/admin.jsp"></portlet:param>
     	 </portlet:renderURL>
-    	 <aui:button onClick="<%= loginURL.toString() %>" value="Cancel"></aui:button>
+    	 <aui:button onClick="<%= cleagueURL.toString() %>" value="Cancel"></aui:button>
     	 
-    	  <portlet:renderURL var="loginURL">
+    	  <portlet:renderURL var="cleagueURL">
          <portlet:param name="mvcPath" value="/html/login/practice.jsp"></portlet:param>
          </portlet:renderURL>
-    	 <aui:button onClick="<%= loginURL.toString() %>" value="Confirm"></aui:button>
+    	 <aui:button onClick="<%= cleagueURL.toString() %>" value="Confirm"></aui:button>
      </aui:button-row>
      
-      <portlet:renderURL var="loginURL">
+      <portlet:renderURL var="cleagueURL">
          <portlet:param name="mvcPath" value="/html/login/view.jsp"></portlet:param>
          </portlet:renderURL>
-     <aui:button type="submit" onClick="<%= loginURL.toString() %>" value="Logout"></aui:button>
+     <aui:button type="submit" onClick="<%= cleagueURL.toString() %>" value="Logout"></aui:button>
 
 </form>
 </body>

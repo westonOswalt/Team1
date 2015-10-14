@@ -7,20 +7,24 @@
  <!DOCTYPE html>
 <html>
 <head>
+<h1> Login</h1>
+<br> 
+<br> 
+<br> 
 
 
 
 </head>
 <body>
 
-<portlet:actionURL name="create" var="createURL"></portlet:actionURL>
+<portlet:actionURL name="login" var="loginURL"></portlet:actionURL>
 
-<aui:form action="<%= createURL %>" name="<portlet:namespace />fm">
+<aui:form action="<%= loginURL %>" name="<portlet:namespace />fm">
 
        <aui:fieldset>
 
-            <aui:input name="">Email</aui:input>
-            <aui:input name="">Password</aui:input>
+            <aui:input name="">Email:</aui:input>
+            <aui:input name="">Password:</aui:input>
 
         </aui:fieldset>
         
