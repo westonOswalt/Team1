@@ -91,7 +91,7 @@
         	<portlet:param name="mvcPath" value="/html/login/view.jsp"></portlet:param>
     	 </portlet:renderURL>
 
-    	 <aui:button onClick="<%= adminURL.toString() %>" value="Cancle"></aui:button>
+    	 <aui:button onClick="<%= adminURL.toString() %>" value="Cancel"></aui:button>
          
 </aui:button-row>
 
